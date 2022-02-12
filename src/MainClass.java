@@ -3,11 +3,11 @@ public class MainClass {
         //
         System.out.println("Hello world");
 
-        person p1 = new person();
+        Person p1 = new Person();
         p1.name = "Aryan";
         p1.age = 19;
 
-        person p2 = new person();
+        Person p2 = new Person();
         p2.name = "Sara";
         p2.age = 19;
 
@@ -20,9 +20,13 @@ public class MainClass {
     }
 }
 
-class person{
+class Person{
     String name;
     int age;
+
+    public Person() {
+        System.out.println("creating an object");
+    }
 
     void walk() {
         System.out.println(name + " is walking.");
