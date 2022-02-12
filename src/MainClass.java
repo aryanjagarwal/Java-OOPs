@@ -17,6 +17,8 @@ public class MainClass {
         p1.eat();
         p2.walk();
         p2.walk(6);
+
+        System.out.println(Person.count);
     }
 }
 
@@ -24,7 +26,10 @@ class Person{
     String name;
     int age;
 
+    static int count;
+
     public Person() {
+        count++;
         System.out.println("creating an object");
     }
 
